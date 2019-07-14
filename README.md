@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/pylipp/venv-burrito.svg?branch=master)](https://travis-ci.org/pylipp/venv-burrito)
+
 ## `venv-burrito`
 
 Minimalistic set of convenience functions for managing Python virtual environments using the `venv` module. Inspired by `virtualenvwrapper`
