@@ -1,6 +1,11 @@
 language: minimal
 dist: xenial
 
+addons:
+  apt:
+    packages:
+    - python3-venv
+
 script: bats ./test/functions.bats
 
 notifications:
