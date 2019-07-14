@@ -1,7 +1,5 @@
-language: python
+language: minimal
 dist: xenial
-python:
-    - "3.5"
 
 script: bats ./test/functions.bats
 
