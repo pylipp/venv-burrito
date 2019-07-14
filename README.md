@@ -22,7 +22,7 @@ Running the tests requires [`bats`](https://github.com/bats-core/bats-core#load-
 
 From the repository root, execute
 
-    bash test/run.sh
+    bats test/functions.bats
 
 ### Why not `virtualenvwrapper`?
 

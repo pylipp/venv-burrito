@@ -1,7 +1,7 @@
 language: minimal
 dist: xenial
 
-script: bash ./test/run.sh
+script: bats ./test/functions.bats
 
 notifications:
     email:
