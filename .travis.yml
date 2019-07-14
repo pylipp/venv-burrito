@@ -1,0 +1,8 @@
+language: minimal
+dist: xenial
+
+script: bash ./test/run.sh
+
+notifications:
+    email:
+        on_success: never
