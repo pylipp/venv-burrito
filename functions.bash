@@ -9,6 +9,12 @@ mkvirtualenv() {
 }
 
 workon() {
+    if [ $# -ne 1 ]; then
+        echo "Specify exactly one venv to work on. Choose from:"
+        lsvirtualenv
+        return 1
+    fi
+
     source "$WORKON_HOME/$1/bin/activate"
 }
 

@@ -82,3 +82,9 @@ teardown() {
 
     [ -d "$WORKON_HOME"/test-venv ]
 }
+
+@test "workon command without argument lists available venvs and has non-zero exit code" {
+    run workon
+    [ "${lines[0]}" = "Specify exactly one venv to work on. Choose from:" ]
+    [ $status -eq 1 ]
+}
